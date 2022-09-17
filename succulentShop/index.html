@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en" class="index-page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&family=Rubik&display=swap" rel="stylesheet">
+        <title>Succulent Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function onHover()
+      {
+          $("#news").attr('src', 'img/newsHover.png');
+      }
+  
+      function offHover()
+      {
+          $("#news").attr('src', 'img/news.png');
+      }
+  </script>
+  </head>
+  <body>
+<nav>
+<img class="navicon" src="images/assets/p.png" >
+<h1>EasyBay</h1>
+<input class="searchbox" type="text" placeholder="Search for anything" >
+<h2 class="navh2">Sign in</h2>
+<img class="iconcart"src="images/assets/cart-dark.png" onclick="aler() " >
+</nav>
+
+
+<ul class="ul-list">
+<li class="list"><a href="#">Aeonium</a></li>
+<li class="list"><a href="#">Andormischus</a></li>
+<li class="list"><a href="#">Agave</a></li>
+<li class="list"><a href="#">Aloe</a></li>
+<li class="list"><a href="#">Anacompseros</a></li>
+<li class="list"><a href="#">Aristaloe</a></li>
+<li class="list"><a href="#">More..</a></li>
+
+</ul>
+<h1 class="h11">Your Source for Serious Succulent Specialties</h1>
+<br>
+<div class="container">
+
+  
+<div class="box1"><h1>Descover succ-ulent varieties one pot or rack at time!<br><br><br>Descover ➜</h1></div>
+<div class="box2">  <img id="news" onmouseover="this.src='images/assets/succulents-2.jpg'" onmouseout="this.src='images/assets/succulents-1.jpg'"  src="images/assets/succulents-1.jpg"> 
+</div>
+<div class="sec">
+<div class="box3"><img src="images/assets/aloe-m.jpg"></div>
+  <div class="box4"><h2 class="box4">Soothing aloe ➜</h2></div>
+</div>
+
+
+  </div>
+
+<div class="container-1">
+
+  <div class="children"><img src="images/assets/aeonium-s.jpg"></div>
+  <div class="children"><img src="images/assets/aloe-s.jpg"></div>
+  <div class="children"><img src="images/assets/cactus-s.jpg"></div>
+  <div class="children"><img src="images/assets/echeveria-s.jpg"></div>
+  <div class="children"><img src="images/assets/sedum-s.jpg"></div>
+  <div class="children"><img src="images/assets/sempervivum-s.jpg"></div>
+
+
+
+</div>
+
+<div class="alert" id="cookies"  >
+
+
+<img src="images/assets/alert-dark.png" > 
+<p>This site makes use of third-party cookies, by clicking "I accept" you agree to the terms outlined in our 
+  <a herf="#">cookie policy</a>.</p>
+  <button class="cookie"  onclick="hide()">I Accept </button> 
+
+</div>
+
+
+  </body>
+  <script type="text/javascript">
+
+function hide() {
+    document.getElementById('cookies').style.display = 'none'; 
+
+}
+
+function aler() {
+  alert("Your Cart is empty!");
+}
+
+  </script>
+
+  </html>
