@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en" class="index-page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300&family=Rubik&display=swap" rel="stylesheet">
+        <title>Just Dessert</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <div class="page" >
+    <div class="header">
+        <h1 class="title">Just<span>Dessert</span></h1>
+        <div class="btns">
+        <button class="btn join" id="btn-join" onclick="hide()">Join</button> 
+        <button class="btn login" id="btn-login" onclick="">Login</button> 
+
+        </div>
+
+    
+
+        </div>
+        <div class="container">
+
+    <div><input class="searchbox" id="search" type="text"  placeholder="SEARCH" ><span class="go" onclick="getInputValue()">GO</span></div>
+    <div class="dox-p"><div class="box"> <img class="icon-dessert" src="imgs/cake.png" ></div><p>Cake</p></div>
+    <div class="dox-p"> <div class="box"> <img class="icon-dessert" src="imgs/ice-cream.png" ></div><p>Ice Creem</p></div>
+    <div class="dox-p"> <div class="box"> <img class="icon-dessert" src="imgs/cookie.png" ></div><p>Cookies</p></div>
+    <div class="dox-p"><div class="box"> <img class="icon-dessert" src="imgs/pie.png" ></div><p>Pie</p></div>
+        </div>
+
+
+
+
+        <div class="container-2" >
+            
+<div class="children children1  ">
+    <h2>Recipe of the Day</h2>
+    <img class="tart-img" src="imgs/orange-tart.jpg" >
+    <div class="sub-children">
+        <p>Orange Tea Jelly Tart<br>By: <a herf="#">yuripiano</a></p>
+      <div class="likes"><img class="like" src="imgs/heart.png" onclick="increaselikes(inc1)"> <span class="listt" id="inc1">44</span></div>
+        
+        </div>
+        <a class="seemore"href="">See Full Recipe</a>
+</div>
+<div class="sec">
+  
+<div class="children children2  ">  
+    <h4>Recommended for you:</h4>
+    <hr>
+    <img class="macarons-img" src="imgs/macarons.jpg" >
+    <div class="sub-children">
+    <p>Macarons<br>By: <a herf="#">EmilieW</a></p>
+  <div class="likes"> <img class="like" src="imgs/heart.png" onclick="increaselikes(inc2)"><span class="listt"  id="inc2" >333</span></div> 
+</div>
+</div>
+<div class="children children3">
+
+<img class="macarons-img" src="imgs/creme-brulee.jpg" >
+<div class="sub-children">
+<p>Creme Brulee<br>By: <a herf="#">MaricaG</a></p>
+<div class="likes"><img class="like" src="imgs/heart.png" onclick="increaselikes(inc3)"><span class="listt" id="inc3">4</span></div>
+</div>
+</div>
+
+
+
+        </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+
+  function hide() {
+    const element = document.getElementById("btn-join");
+    element.remove();
+}
+
+
+
+var clicks=document.querySelectorAll(".listt")
+
+function increaselikes(e){
+    if (e.id=="inc1") 
+    {   
+        clicks[0].innerText++
+    }
+    else if (e.id=="inc2") 
+    {   
+        clicks[1].innerText++
+    }
+    else if (e.id=="inc3") 
+    {   
+        clicks[2].innerText++
+    }
+
+}
+
+function getInputValue(){
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("search").value;
+            
+            // Displaying the value
+            alert("You are searching for "+ "''"+inputVal+"''");
+        }
+
+</script>
+</html>

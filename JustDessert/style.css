@@ -1,0 +1,215 @@
+* {
+  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3f2f3;
+}
+.page{
+
+background-color: white;
+margin: 0% auto;
+width: 80%;
+display: flex;
+flex-wrap: wrap;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #7e7e7e;
+  margin: 0% auto;
+  width: 80%;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  justify-content: left;
+  padding: 10px;
+  margin: 0px;
+  color: #f3f2f3;
+}
+span {
+  color: darkorange;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  color: black;
+  padding: 6px;
+  width: 55px;
+  height: 30px;
+  border-color: black;
+  box-shadow: 4px 3px black;
+
+}
+
+.join {
+  background-color: darkorange;
+  margin-right: 5px;
+}
+.login {
+  background-color: #095494;
+
+  width: 70px;
+}
+
+
+
+.searchbox {
+    flex-wrap: nowrap;
+  border: 2.5px solid black;
+  width: 200px;
+  height: 28px;
+  outline: none;
+  border-radius: 30px;
+border-bottom-right-radius: 0px;
+border-top-right-radius: 0px;
+padding-left: 20px;
+}
+.go {
+ flex-wrap: nowrap;
+    color: #f3f2f3;
+  border: 2.5px solid black;
+border-left: 1.25px;
+  background-color: #095494;
+  text-align:center ;
+  border-radius: 30px;
+  margin: 0;
+  cursor: pointer;
+  padding-bottom: 6.5px;
+  padding-left: 6px;
+  padding-right: 8px;
+  padding-top: 4.5px;
+  border-bottom-left-radius: 0px;
+border-top-left-radius: 0px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+  padding-top:30px;
+  margin: 0% auto;
+  background-color: #f9cb9c;
+
+
+}
+.box {
+  background-color: aliceblue;
+  border-radius: 50px;
+  padding: 10px;
+}
+.dox-p p{
+display: flex;
+justify-content: center;
+text-align: center;
+
+}
+.icon-dessert{
+    width: 90px;
+    height: 90px;
+  
+}
+.container-2{
+    display: flex ;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+   width: 80%;
+
+    margin: 0% auto;
+  
+}
+
+.sec {
+    flex-direction: column;
+  
+  }
+  .sub-children{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+.children1{
+
+padding-left: 15px;
+padding-right: 15px;
+box-sizing: border-box;
+    padding-bottom: 20px;
+    background-color: #f3f2f3;
+    
+    align-items: center;
+    justify-content: center;
+
+}
+
+h2{
+    color: #095494;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 40px;
+
+}
+h4{
+    margin-bottom: 5px;
+}
+hr{
+margin-top: 0;
+    margin-bottom: 15px;
+}
+.tart-img{
+
+    width: 490px;
+    height: 310px;
+
+}
+
+.macarons-img{
+
+    width: 280px;
+    height: 180px;
+
+}
+
+
+
+.like{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 3px;
+    cursor: pointer;
+
+}
+
+.likes{
+
+    align-items: center;
+}
+.listt{
+    color: black;
+}
+a{
+    color:dodgerblue;
+    text-decoration: underline;
+}
+ a.seemore{
+    color:dodgerblue;
+    text-decoration: underline;
+  display: flex;
+  justify-content: center;
+}
+
